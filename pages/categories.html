@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-blue": "#074EA2",
+            },
+            spacing: {
+              header: "60px", // Header Height
+              footer: "100px",
+              200: "200px",
+              "80vh": "80vh",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="w-full flex justify-around bg-dark-blue h-header">
+      <div class="flex gap-3 items-center">
+        <img
+          src="../assets/logos/eptran-logo.png"
+          class="h-4/6"
+          alt="Logo do Eptran"
+        />
+        <img
+          src="../assets/logos/joinville-logo.png"
+          class="h-4/6"
+          alt="Logo de Joinville"
+        />
+      </div>
+
+      <ul class="flex text-white justify-between w-1/3 items-center">
+        <li>
+          <a href="../pages/categories.html" class="hover:border-b-2"
+            >Categorias</a
+          >
+        </li>
+        <li><a href="" class="hover:border-b-2">Sobre Nós</a></li>
+        <li>
+          <a href="../pages/contact.html" class="hover:border-b-2">Contato</a>
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-x-10">
+        <a href=""
+          ><img
+            class="w-[30px]"
+            src="../assets/icons/settings.svg"
+            alt="Configurações"
+        /></a>
+        <button
+          class="h-fit text-2xl px-10 py-1 rounded bg-white text-dark-blue font-semibold"
+        >
+          Entrar
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="flex w-full px-20 relative">
+        <div class="bg-[#45C5DF] h-80vh w-full my-10"></div>
+        <div>
+          <img src="../assets/icons/arrow.svg" alt="Lef" />
+          <img src="../assets/icons/arrow.svg" alt="" />
+        </div>
+      </section >
+
+      <section class="flex w-full h-10vh px-20 relative">
+
+      </section>
+    </main>
+    <footer class="w-full flex justify-around bg-dark-blue h-footer">
+      <div class="flex flex-col gap-3 items-center">
+        <img
+          src="../assets/logos/eptran-logo.png"
+          class="h-4/6"
+          alt="Logo do Eptran"
+        />
+        <img
+          src="../assets/logos/joinville-logo.png"
+          class="h-4/6"
+          alt="Logo de Joinville"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
