@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-blue": "#074EA2",
+              "light-gray": "#F4F4F4",
+              
+            },
+            spacing: {
+              header: "60px", // Header Height
+              footer: "100px",
+              200: "200px",
+              "80vh": "80vh",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="w-full flex justify-around bg-dark-blue h-header">
+        <a href="../index.html" class="flex gap-3 items-center">
+          <img
+            src="../assets/logos/eptran-logo.png"
+            class="h-4/6"
+            alt="Logo do Eptran"
+          />
+          <img
+            src="../assets/logos/joinville-logo.png"
+            class="h-4/6"
+            alt="Logo de Joinville"
+          />
+        </a>
+  
+        <ul class="flex text-white justify-between w-1/3 items-center">
+          <li>
+            <a href="./categories.html" class="hover:border-b-2"
+              >Categorias</a
+            >
+          </li>
+          <li><a href="./about-us.html" class="hover:border-b-2">Sobre Nós</a></li>
+          <li>
+            <a href="./contact.html" class="hover:border-b-2">Contato</a>
+          </li>
+        </ul>
+  
+        <div class="flex items-center gap-x-10">
+          <a href=""
+            ><img
+              class="w-[30px]"
+              src="../assets/icons/settings.svg"
+              alt="Configurações"
+          /></a>
+          <button
+            class="h-fit text-2xl px-10 py-1 rounded bg-white text-dark-blue font-semibold"
+          >
+            Entrar
+          </button>
+        </div>
+    </header>
+
+    <main class="w-full flex flex-col gap-10 my-10">
+        <section class="flex flex-col w-full px-40">
+            <span class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl">Entre</span>
+            <form action="" class="flex flex-col gap-y-10">
+                <label for="scholarity" class="justify-center">Qual a sua escolaridade</label>
+                <div class="flex justify-between">
+                    <input type="radio" name="scholarity" value="elementary" class="w-[100vw] h-[100vw]">
+                    <input type="radio" name="scholarity" value="high" class="w-[100vw] h-[100vw]">
+                    <input type="radio" name="scholarity" value="middle" class="w-[100vw] h-[100vw]">
+                </div>
+            </form>
+        </section>
+    </main>
+
+      <footer class="w-full flex justify-between bg-dark-blue h-footer">
+        <div class="w-[80%] flex flex-col gap-3 items-center">
+          <img
+            src="../assets/logos/eptran-logo.png"
+            class="h-4/6"
+            alt="Logo do Eptran"
+          />        
+          <img
+            src="../assets/logos/joinville-logo.png"
+            class="h-4/6"
+            alt="Logo de Joinville"
+          />
+        </div>
+        <div class="w-[80%] flex flex-col gap-3 items-center text-white">
+          <p>Rua Caçador, 112 – Anita Garibaldi – 89203-610, Joinville – SCM </p>   
+          <p>(47) 3431-1500 | detrans.uet@joinville.sc.gov.br <p/>
+        </div>
+        <div class="flex flex-col ...">
+          <div class= flex>  
+            <li><a href="" target=”_blank”><img
+            src="../assets/icons/youtube-logo.svg"></a></li>
+            <li><a href="" target=”_blank”><img
+            src="../assets/icons/instagran-logo.svg"></a></li>
+            <li><a href="" target=”_blank”><img
+            src=""></a></li>
+          </div>
+          <div class="w-[80%] flex flex-col gap-3 items-center text-white">
+            <p>Site desenvolvido por JVCode</p>></div>
+        </div>
+    </footer>
+  </body>
+</html>

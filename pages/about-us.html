@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-blue": "#074EA2",
+              "light-gray": "#F4F4F4",
+            },
+            spacing: {
+              header: "60px", // Header Height
+              footer: "100px",
+              200: "200px",
+              "80vh": "80vh",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section>
+      <div id="background-filter" class="z-10 w-screen h-screen fixed bg-black opacity-50"></div>
+      <div class="z-10 w-screen h-screen fixed flex justify-center items-center">
+        <div id="login-container" class="w-[600px] flex flex-col gap-10 px-14 py-10 bg-white rounded-xl">
+          <span class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl">Entre</span>
+          <form action="" class="flex flex-col gap-6">
+            <label for="email" class="flex flex-col text-black">
+              <span class="text-dark-blue font-medium">Email</span>
+              <input type="email" id="email" placeholder="Email" class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300">
+              <span class="text-sm">Digite seu email</span>
+            </label>
+            <label for="name" class="flex flex-col text-black">
+              <span class="text-dark-blue font-medium">Nome</span>
+              <input type="text" id="name" placeholder="Nome" class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300">
+              <span class="text-sm">Digite seu nome</span>
+            </label>
+            <a href="./register.html" class="underline text-black hover:text-dark-blue">Esqueci minha senha</a>
+            <input type="submit" value="Entrar" class="w-fit self-center py-1 px-5 rounded-md bg-dark-blue text-white text-xl">
+          </form>
+        </div>
+      </div>
+    </section>
+    <header class="w-full flex justify-around bg-dark-blue h-header">
+      <a href="../index.html" class="flex gap-3 items-center">
+        <img
+          src="../assets/logos/eptran-logo.png"
+          class="h-4/6"
+          alt="Logo do Eptran"
+        />
+        <img
+          src="../assets/logos/joinville-logo.png"
+          class="h-4/6"
+          alt="Logo de Joinville"
+        />
+      </a>
+
+      <ul class="flex text-white justify-between w-1/3 items-center">
+        <li>
+          <a href="./categories.html" class="hover:border-b-2"
+            >Categorias</a
+          >
+        </li>
+        <li><a href="./about-us.html" class="hover:border-b-2">Sobre Nós</a></li>
+        <li>
+          <a href="./contact.html" class="hover:border-b-2">Contato</a>
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-x-10">
+        <a href=""
+          ><img
+            class="w-[30px]"
+            src="../assets/icons/settings.svg"
+            alt="Configurações"
+        /></a>
+        <button
+          id="login-buttom"
+          class="h-fit text-2xl px-10 py-1 rounded bg-white text-dark-blue font-semibold"
+        >
+          Entrar
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="flex w-full px-20">
+        <div class="bg-[#45C5DF] h-80vh w-full relative">
+          <div class="absolute flex top-2/4 -translate-y-2/4 w-[100%]">
+            <img
+              src="../assets/icons/arrow.svg"
+              class="left-slider-arrow absolute left-[3%]"
+              alt="Passar slide para a esquerda"
+            />
+            <img
+              src="../assets/icons/arrow.svg"
+              class="right-slider-arrow absolute right-[3%] rotate-180"
+              alt="Passar slide para a direita"
+            />
+          </div>
+          <div class="absolute bottom-[2%] left-1/2 -translate-x-1/2 flex gap-5">
+            <img src="../assets/icons/white-balls.svg" alt="">
+            <img src="../assets/icons/white-balls.svg" alt="">
+            <img src="../assets/icons/white-balls.svg" alt="">
+            <img src="../assets/icons/white-balls.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="flex w-full h-10vh px-20">
+
+      </section>
+    </main>
+    <footer class="w-full flex justify-around bg-dark-blue h-footer">
+      <div class="flex flex-col gap-3 items-center">
+        <img
+          src="../assets/logos/eptran-logo.png"
+          class="h-4/6"
+          alt="Logo do Eptran"
+        />
+        <img
+          src="../assets/logos/joinville-logo.png"
+          class="h-4/6"
+          alt="Logo de Joinville"
+        />
+      </div>
+    </footer>
+    <script src=" ./../../assets/scripts/popup.js"></script>
+  </body>
+</html>

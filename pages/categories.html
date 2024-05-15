@@ -11,10 +11,12 @@
           extend: {
             colors: {
               "dark-blue": "#074EA2",
+              "light-gray": "#F4F4F4",
+              
             },
             spacing: {
               header: "60px", // Header Height
-              footer: "100px",
+              footer: "204px",
               200: "200px",
               "80vh": "80vh",
             },
@@ -24,8 +26,8 @@
     </script>
   </head>
   <body>
-    <header class="w-full flex justify-around bg-dark-blue h-header">
-      <div class="flex gap-3 items-center">
+    <header class="w-full flex justify-between px-20 bg-dark-blue h-header">
+      <a href="../index.html" class="flex gap-3 items-center">
         <img
           src="../assets/logos/eptran-logo.png"
           class="h-4/6"
@@ -36,17 +38,17 @@
           class="h-4/6"
           alt="Logo de Joinville"
         />
-      </div>
+      </a>
 
       <ul class="flex text-white justify-between w-1/3 items-center">
         <li>
-          <a href="../pages/categories.html" class="hover:border-b-2"
+          <a href="./categories.html" class="hover:border-b-2"
             >Categorias</a
           >
         </li>
-        <li><a href="" class="hover:border-b-2">Sobre Nós</a></li>
+        <li><a href="./about-us.html" class="hover:border-b-2">Sobre Nós</a></li>
         <li>
-          <a href="../pages/contact.html" class="hover:border-b-2">Contato</a>
+          <a href="./contact.html" class="hover:border-b-2">Contato</a>
         </li>
       </ul>
 
@@ -64,31 +66,105 @@
         </button>
       </div>
     </header>
-    <main>
-      <section class="flex w-full px-20 relative">
-        <div class="bg-[#45C5DF] h-80vh w-full my-10"></div>
-        <div>
-          <img src="../assets/icons/arrow.svg" alt="Lef" />
-          <img src="../assets/icons/arrow.svg" alt="" />
+    <main class="max-w-[1920px] flex flex-col gap-y-10 my-10">
+      <section class="flex w-full px-20">
+        <div class="bg-[#45C5DF] h-80vh w-full relative">
+          <div class="absolute flex top-2/4 -translate-y-2/4 w-[100%]">
+            <img
+              src="../assets/icons/arrow.svg"
+              class="left-slider-arrow absolute left-[3%]"
+              alt="Passar slide para a esquerda"
+            />
+            <img
+              src="../assets/icons/arrow.svg"
+              class="right-slider-arrow absolute right-[3%] rotate-180"
+              alt="Passar slide para a direita"
+            />
+          </div>
+          <div class="absolute bottom-[2%] left-1/2 -translate-x-1/2 flex gap-5">
+            <img src="../assets/icons/white-balls.svg" alt="">
+            <img src="../assets/icons/white-balls.svg" alt="">
+            <img src="../assets/icons/white-balls.svg" alt="">
+            <img src="../assets/icons/white-balls.svg" alt="">
+          </div>
         </div>
-      </section >
+      </section>
 
-      <section class="flex w-full h-10vh px-20 relative">
-
+      <section class="flex w-full px-40 py-10 bg-light-gray">
+        <p class="text-justify text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nulla explicabo, expedita nisi <b class="text-dark-blue text-2xl">necessitatibus</b> nihil illum architecto delectus praesentium porro dignissimos laudantium reiciendis sint similique provident <b class="text-dark-blue text-2xl">nostrum</b> vel corrupti ipsam eum iure <b class="text-dark-blue text-2xl">voluptas</b> libero harum nobis. Explicabo magnam blanditiis corrupti temporibus, necessitatibus libero consequatur laboriosam. Dignissimos ipsam asperiores a quia aut <b class="text-dark-blue text-2xl">consequatur</b> obcaecati laboriosam enim. Pariatur <b class="text-dark-blue text-2xl">enim</b> excepturi id corporis officiis numquam praesentium magnam delectus quibusdam vero at possimus cumque, unde eaque illo dicta. Dolores <b class="text-dark-blue text-2xl">voluptate</b> obcaecati labore rerum neque atque ut architecto natus delectus aperiam, dolorum beatae modi esse provident corporis ea nulla? Placeat nemo quod <b class="text-dark-blue text-2xl">architecto</b> eaque eos.</p>
+      </section>
+      <section class="flex items-center gap-x-10 w-full px-40 py-5 bg-white">
+        <img class="rounded-md w-1/3" src="../assets/eptran-kids.png" alt="Criancas">
+        <div class="flex flex-col gap-y-5 w-2/3">
+          <h2 class="text-3xl text-dark-blue font-semibold">Lorem, ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit. Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi laboriosam, facilis <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni expedita consectetur deleniti hic voluptate natus sed. <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in voluptatum enim odio et, <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde voluptas molestiae ipsam delectus nesciunt.</p>
+        </div>
+      </section>
+      <section class="flex items-center gap-x-10 w-full px-40 py-5 bg-light-gray">
+        <img class="rounded-md w-1/3" src="../assets/eptran-kids.png" alt="Criancas">
+        <div class="flex flex-col gap-y-5 w-2/3">
+          <h2 class="text-3xl text-dark-blue font-semibold">Lorem, ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit. Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi laboriosam, facilis <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni expedita consectetur deleniti hic voluptate natus sed. <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in voluptatum enim odio et, <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde voluptas molestiae ipsam delectus nesciunt.</p>
+        </div>
+      </section>
+      <section class="flex items-center gap-x-10 w-full px-40 py-5 bg-white">
+        <img class="rounded-md w-1/3" src="../assets/eptran-kids.png" alt="Criancas">
+        <div class="flex flex-col gap-y-5 w-2/3">
+          <h2 class="text-3xl text-dark-blue font-semibold">Lorem, ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit. Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi laboriosam, facilis <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni expedita consectetur deleniti hic voluptate natus sed. <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in voluptatum enim odio et, <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde voluptas molestiae ipsam delectus nesciunt.</p>
+        </div>
+      </section>
+      <section class="flex items-center gap-x-10 w-full px-40 py-5 bg-light-gray">
+        <img class="rounded-md w-1/3" src="../assets/eptran-kids.png" alt="Criancas">
+        <div class="flex flex-col gap-y-5 w-2/3">
+          <h2 class="text-3xl text-dark-blue font-semibold">Lorem, ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit. Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi laboriosam, facilis <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni expedita consectetur deleniti hic voluptate natus sed. <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in voluptatum enim odio et, <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde voluptas molestiae ipsam delectus nesciunt.</p>
+        </div>
+      </section>
+      <section class="flex items-center gap-x-10 w-full px-40 py-5 bg-white">
+        <img class="rounded-md w-1/3" src="../assets/eptran-kids.png" alt="Criancas">
+        <div class="flex flex-col gap-y-5 w-2/3">
+          <h2 class="text-3xl text-dark-blue font-semibold">Lorem, ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit. Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi laboriosam, facilis <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni expedita consectetur deleniti hic voluptate natus sed. <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in voluptatum enim odio et, <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde voluptas molestiae ipsam delectus nesciunt.</p>
+        </div>
+      </section>
+      <section class="flex items-center gap-x-10 w-full px-40 py-5 bg-light-gray">
+        <img class="rounded-md w-1/3" src="../assets/eptran-kids.png" alt="Criancas">
+        <div class="flex flex-col gap-y-5 w-2/3">
+          <h2 class="text-3xl text-dark-blue font-semibold">Lorem, ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit. Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi laboriosam, facilis <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni expedita consectetur deleniti hic voluptate natus sed. <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in voluptatum enim odio et, <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde voluptas molestiae ipsam delectus nesciunt.</p>
+        </div>
       </section>
     </main>
-    <footer class="w-full flex justify-around bg-dark-blue h-footer">
-      <div class="flex flex-col gap-3 items-center">
+    <footer class="w-full h-footer flex justify-between items-center bg-dark-blue px-20">
+      <div class="h-[60%] flex flex-col gap-3 items-center">
         <img
           src="../assets/logos/eptran-logo.png"
-          class="h-4/6"
+          class="h-1/2"
           alt="Logo do Eptran"
-        />
+        />        
         <img
           src="../assets/logos/joinville-logo.png"
-          class="h-4/6"
+          class="h-1/2"
           alt="Logo de Joinville"
         />
+      </div>
+      <div class="w-[80%] flex flex-col gap-3 items-center text-white text-xl">
+        <p>Rua Caçador, 112 – Anita Garibaldi – 89203-610, Joinville – SCM </p>   
+        <p>(47) 3431-1500 | detrans.uet@joinville.sc.gov.br</p>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex list-none justify-between">  
+          <li><a href="" target=”_blank”><img
+          src="../assets/icons/youtube-logo.svg"></a></li>
+          <li><a href="" target=”_blank”><img
+          src="../assets/icons/instagran-logo.svg"></a></li>
+          <li><a href="" target=”_blank”><img
+          src="../assets/icons/facebook-logo.svg"></a></li>
+        </div>
+        <div class="w-[80%] flex flex-col gap-3 items-center text-white text-sm">
+          <p>Site desenvolvido por JVCode</p>
+        </div>
       </div>
     </footer>
   </body>
