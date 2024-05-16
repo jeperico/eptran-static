@@ -15,10 +15,11 @@
               
             },
             spacing: {
-              header: "60px", // Header Height
-              footer: "100px",
+              header: "70px", // Header Height
+              footer: "204px",
               200: "200px",
               "80vh": "80vh",
+              "60vh": "60vh",
             },
           },
         },
@@ -68,48 +69,41 @@
     </header>
 
     <main class="w-full flex flex-col gap-10 my-10">
-        <section class="flex flex-col w-full px-40">
-            <span class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl">Entre</span>
-            <form action="" class="flex flex-col gap-y-10">
-                <label for="scholarity" class="justify-center">Qual a sua escolaridade</label>
-                <div class="flex justify-between">
-                    <input type="radio" name="scholarity" value="elementary" class="w-[100vw] h-[100vw]">
-                    <input type="radio" name="scholarity" value="high" class="w-[100vw] h-[100vw]">
-                    <input type="radio" name="scholarity" value="middle" class="w-[100vw] h-[100vw]">
-                </div>
+        <section class="flex flex-col gap-y-10 w-full px-40">
+            <span class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl">Registre-se</span>
+            <form action="" class="flex flex-col items-center gap-y-14">
+                
             </form>
         </section>
     </main>
-
-      <footer class="w-full flex justify-between bg-dark-blue h-footer">
-        <div class="w-[80%] flex flex-col gap-3 items-center">
-          <img
-            src="../assets/logos/eptran-logo.png"
-            class="h-4/6"
-            alt="Logo do Eptran"
-          />        
-          <img
-            src="../assets/logos/joinville-logo.png"
-            class="h-4/6"
-            alt="Logo de Joinville"
-          />
+    <footer class="w-full h-footer flex justify-between items-center bg-dark-blue px-20 py-10">
+      <div class="h-full flex flex-col justify-between">
+        <img
+          src="../assets/logos/eptran-logo.png"
+          class="w-auto h-2/5"
+          alt="Logo do Eptran"
+        />        
+        <img
+          src="../assets/logos/joinville-logo.png"
+          class="w-auto h-2/5"
+          alt="Logo de Joinville"
+        />
+      </div>
+      <div class="w-fit flex flex-col gap-3 items-center text-white text-lg">
+        <p>Rua Caçador, 112 – Anita Garibaldi – 89203-610, Joinville – SCM </p>   
+        <p><a class="underline decoration-2" href="">(47) 3431-1500</a> | <a class="underline decoration-2" href="mailto:detrans.uet@joinville.sc.gov.br">detrans.uet@joinville.sc.gov.br</a></p>
+      </div>
+      <div class="flex w-fit flex-col gap-y-4">
+        <div class="flex list-none justify-between">  
+          <li><a href="" target="_blank"><img class="w-[40px]"
+          src="../assets/icons/youtube-logo.svg"></a></li>
+          <li><a href="" target="_blank"><img class="w-[40px]"
+          src="../assets/icons/facebook-logo.svg"></a></li>
+          <li><a href="" target="_blank"><img class="w-[40px]"
+          src="../assets/icons/instagran-logo.svg"></a></li>
         </div>
-        <div class="w-[80%] flex flex-col gap-3 items-center text-white">
-          <p>Rua Caçador, 112 – Anita Garibaldi – 89203-610, Joinville – SCM </p>   
-          <p>(47) 3431-1500 | detrans.uet@joinville.sc.gov.br <p/>
-        </div>
-        <div class="flex flex-col ...">
-          <div class= flex>  
-            <li><a href="" target=”_blank”><img
-            src="../assets/icons/youtube-logo.svg"></a></li>
-            <li><a href="" target=”_blank”><img
-            src="../assets/icons/instagran-logo.svg"></a></li>
-            <li><a href="" target=”_blank”><img
-            src=""></a></li>
-          </div>
-          <div class="w-[80%] flex flex-col gap-3 items-center text-white">
-            <p>Site desenvolvido por JVCode</p>></div>
-        </div>
+        <p class="text-white text-base text-center">Site desenvolvido por JVCode</p>
+      </div>  
     </footer>
   </body>
 </html>

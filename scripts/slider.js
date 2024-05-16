@@ -21,4 +21,4 @@ function moveSlider(arrow)  {
     console.log("You click at " + arrow);
 }
 /* FUNCTIONS */
-// moveSlider('move-left');
+moveSlider('move-left');

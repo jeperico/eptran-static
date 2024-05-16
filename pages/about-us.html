@@ -14,10 +14,11 @@
               "light-gray": "#F4F4F4",
             },
             spacing: {
-              header: "60px", // Header Height
-              footer: "100px",
+              header: "70px", // Header Height
+              footer: "204px",
               200: "200px",
               "80vh": "80vh",
+              "60vh": "60vh",
             },
           },
         },
@@ -25,10 +26,10 @@
     </script>
   </head>
   <body>
-    <section>
-      <div id="background-filter" class="z-10 w-screen h-screen fixed bg-black opacity-50"></div>
-      <div class="z-10 w-screen h-screen fixed flex justify-center items-center">
-        <div id="login-container" class="w-[600px] flex flex-col gap-10 px-14 py-10 bg-white rounded-xl">
+    <section id="background-filter-section" class="fixed w-screen h-screen">
+      <div id="background-filter" class="z-50 w-screen h-screen fixed bg-black opacity-50"></div>
+      <div id="login-container" class="z-50 absolute flex justify-center items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div class="w-[600px] flex flex-col gap-10 px-14 absolute z-100 py-10 bg-white rounded-xl">
           <span class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl">Entre</span>
           <form action="" class="flex flex-col gap-6">
             <label for="email" class="flex flex-col text-black">
@@ -41,7 +42,8 @@
               <input type="text" id="name" placeholder="Nome" class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300">
               <span class="text-sm">Digite seu nome</span>
             </label>
-            <a href="./register.html" class="underline text-black hover:text-dark-blue">Esqueci minha senha</a>
+            <a href="" class="underline text-black hover:text-dark-blue">Esqueci minha senha</a>
+            <a href="./register.html" class="underline text-black hover:text-dark-blue">Não possuo conta</a>
             <input type="submit" value="Entrar" class="w-fit self-center py-1 px-5 rounded-md bg-dark-blue text-white text-xl">
           </form>
         </div>
@@ -82,54 +84,65 @@
         /></a>
         <button
           id="login-buttom"
-          class="h-fit text-2xl px-10 py-1 rounded bg-white text-dark-blue font-semibold"
+          class="h-fit text-2xl cursor-pointer px-10 py-1 rounded bg-white text-dark-blue font-semibold"
         >
           Entrar
         </button>
       </div>
     </header>
-    <main>
+    <main class="h-screen py-8">
       <section class="flex w-full px-20">
-        <div class="bg-[#45C5DF] h-80vh w-full relative">
-          <div class="absolute flex top-2/4 -translate-y-2/4 w-[100%]">
+        <div class="flex-col bg-[#45C5DF] h-60vh w-full rounded">
+          <div class="flex justify-between w-full h-[55vh]">
             <img
-              src="../assets/icons/arrow.svg"
-              class="left-slider-arrow absolute left-[3%]"
+              src="../assets/icons/left-arrow.svg"
+              class="left-slider-arrow w-[5vh] min-w-4 ml-4"
               alt="Passar slide para a esquerda"
             />
             <img
-              src="../assets/icons/arrow.svg"
-              class="right-slider-arrow absolute right-[3%] rotate-180"
+              src="../assets/icons/right-arrow.svg"
+              class="right-slider-arrow w-[5vh] mr-4 min-w-4"
               alt="Passar slide para a direita"
             />
           </div>
-          <div class="absolute bottom-[2%] left-1/2 -translate-x-1/2 flex gap-5">
-            <img src="../assets/icons/white-balls.svg" alt="">
-            <img src="../assets/icons/white-balls.svg" alt="">
-            <img src="../assets/icons/white-balls.svg" alt="">
-            <img src="../assets/icons/white-balls.svg" alt="">
+          <div class="w-fit flex m-auto gap-5">
+            <img class="h-[3vh] min-h-2" src="../assets/icons/white-balls.svg" alt="">
+            <img class="h-[3vh] min-h-2" src="../assets/icons/white-balls.svg" alt="">
+            <img class="h-[3vh] min-h-2" src="../assets/icons/white-balls.svg" alt="">
+            <img class="h-[3vh] min-h-2" src="../assets/icons/white-balls.svg" alt="">
           </div>
         </div>
       </section>
-
-      <section class="flex w-full h-10vh px-20">
-
-      </section>
     </main>
-    <footer class="w-full flex justify-around bg-dark-blue h-footer">
-      <div class="flex flex-col gap-3 items-center">
+    <footer class="w-full h-footer flex justify-between items-center bg-dark-blue px-20 py-10">
+      <div class="h-full flex flex-col justify-between">
         <img
           src="../assets/logos/eptran-logo.png"
-          class="h-4/6"
+          class="w-auto h-2/5"
           alt="Logo do Eptran"
-        />
+        />        
         <img
           src="../assets/logos/joinville-logo.png"
-          class="h-4/6"
+          class="w-auto h-2/5"
           alt="Logo de Joinville"
         />
       </div>
+      <div class="w-fit flex flex-col gap-3 items-center text-white text-lg">
+        <p>Rua Caçador, 112 – Anita Garibaldi – 89203-610, Joinville – SCM </p>   
+        <p><a class="underline decoration-2" href="">(47) 3431-1500</a> | <a class="underline decoration-2" href="mailto:detrans.uet@joinville.sc.gov.br">detrans.uet@joinville.sc.gov.br</a></p>
+      </div>
+      <div class="flex w-fit flex-col gap-y-4">
+        <div class="flex list-none justify-between">  
+          <li><a href="" target="_blank"><img class="w-[40px]"
+          src="../assets/icons/youtube-logo.svg"></a></li>
+          <li><a href="" target="_blank"><img class="w-[40px]"
+          src="../assets/icons/facebook-logo.svg"></a></li>
+          <li><a href="" target="_blank"><img class="w-[40px]"
+          src="../assets/icons/instagran-logo.svg"></a></li>
+        </div>
+        <p class="text-white text-base text-center">Site desenvolvido por JVCode</p>
+      </div>  
     </footer>
-    <script src=" ./../../assets/scripts/popup.js"></script>
+    <script src=" ./../../scripts/popup.js"></script>
   </body>
 </html>
