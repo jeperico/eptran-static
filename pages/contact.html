@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <title>Document</title>
+    <title>Entre</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -123,6 +122,7 @@
         </button>
       </div>
     </header>
+
     <main>
       <!-- start Banner -->
       <section>
@@ -150,6 +150,61 @@
         </div>
       </section>
       <!-- end Banner -->
+      <section
+        class="flex flex-col items-center gap-x-10 w-full px-40 py-5 bg-light-gray"
+      >
+        <span
+          class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl"
+          >Entre</span
+        >
+        <form action="" class="flex flex-col gap-6 w-2/3">
+          <label for="name" class="flex flex-col text-black">
+            <span class="text-dark-blue font-medium">Nome</span>
+            <input
+              type="text"
+              id="name"
+              placeholder="Nome"
+              class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+            />
+          </label>
+          <label for="email" class="flex flex-col text-black">
+            <span class="text-dark-blue font-medium">Email</span>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+            />
+          </label>
+          <label for="Tema" class="flex flex-col text-black">
+            <span class="text-dark-blue font-medium">Tema</span>
+            <input
+              type="text"
+              id="name"
+              placeholder="Tema"
+              class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+            />
+          </label>
+          <label for="Tema" class="flex flex-col text-black">
+            <span class="text-dark-blue font-medium">Mensagem</span>
+            <textarea
+              name="Mensagem"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensagem"
+              class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+            ></textarea>
+          </label>
+          <div class="flex justify-between">
+            <input
+              type="submit"
+              value="Entregar"
+              class="w-fit self-center py-1 px-5 rounded-md bg-dark-blue text-white text-xl"
+            />
+          </div>
+        </form>
+      </section>
     </main>
     <footer
       class="w-full h-footer flex justify-between items-center bg-dark-blue px-20 py-10"
@@ -200,6 +255,7 @@
         </p>
       </div>
     </footer>
+    <script src="./scripts/slider.js"></script>
     <script src=" ./../../scripts/popup.js"></script>
   </body>
 </html>
