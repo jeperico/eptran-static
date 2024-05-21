@@ -12,7 +12,6 @@
             colors: {
               "dark-blue": "#074EA2",
               "light-gray": "#F4F4F4",
-              
             },
             spacing: {
               header: "70px", // Header Height
@@ -23,66 +22,125 @@
             },
           },
         },
-      };
+      }
     </script>
+    <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
-    <header class="w-full flex justify-around bg-dark-blue h-header">
-        <a href="../index.html" class="flex gap-3 items-center">
-          <img
-            src="../assets/logos/eptran-logo.png"
-            class="h-4/6"
-            alt="Logo do Eptran"
-          />
-          <img
-            src="../assets/logos/joinville-logo.png"
-            class="h-4/6"
-            alt="Logo de Joinville"
-          />
-        </a>
-  
-        <ul class="flex text-white justify-between w-1/3 items-center">
-          <li>
-            <a href="./categories.html" class="hover:border-b-2"
-              >Categorias</a
-            >
-          </li>
-          <li><a href="./about-us.html" class="hover:border-b-2">Sobre Nós</a></li>
-          <li>
-            <a href="./contact.html" class="hover:border-b-2">Contato</a>
-          </li>
-        </ul>
-  
-        <div class="flex items-center gap-x-10">
-          <a href=""
-            ><img
-              class="w-[30px]"
-              src="../assets/icons/settings.svg"
-              alt="Configurações"
-          /></a>
-          <button
-            class="h-fit text-2xl px-10 py-1 rounded bg-white text-dark-blue font-semibold"
+    <section id="popup" class="fixed w-screen h-screen hidden">
+      <div
+        id="background-filter"
+        class="z-50 w-screen h-screen fixed bg-black opacity-50"
+      ></div>
+      <div
+        id="login-container"
+        class="z-50 absolute flex justify-center items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
+        <div
+          class="w-[600px] flex flex-col gap-10 px-14 absolute z-100 py-10 bg-white rounded-xl"
+        >
+          <span
+            class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl"
+            >Entre</span
           >
-            Entrar
-          </button>
+          <form action="" class="flex flex-col gap-6">
+            <label for="email" class="flex flex-col text-black">
+              <span class="text-dark-blue font-medium">Email</span>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+              />
+              <span class="text-sm">Digite seu email</span>
+            </label>
+            <label for="name" class="flex flex-col text-black">
+              <span class="text-dark-blue font-medium">Nome</span>
+              <input
+                type="text"
+                id="name"
+                placeholder="Nome"
+                class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+              />
+              <span class="text-sm">Digite seu nome</span>
+            </label>
+            <a href="" class="underline text-black hover:text-dark-blue"
+              >Esqueci minha senha</a
+            >
+            <a
+              href="./register.html"
+              class="underline text-black hover:text-dark-blue"
+              >Não possuo conta</a
+            >
+            <input
+              type="submit"
+              value="Entrar"
+              class="cursor-pointer w-fit self-center py-1 px-5 rounded-md bg-dark-blue text-white text-xl"
+            />
+          </form>
         </div>
+      </div>
+    </section>
+    <header class="w-full flex justify-around bg-dark-blue h-header">
+      <a href="../index.html" class="flex gap-3 items-center">
+        <img
+          src="../assets/logos/eptran-logo.png"
+          class="h-4/6"
+          alt="Logo do Eptran"
+        />
+        <img
+          src="../assets/logos/joinville-logo.png"
+          class="h-4/6"
+          alt="Logo de Joinville"
+        />
+      </a>
+
+      <ul class="flex text-white justify-between w-1/3 items-center">
+        <li>
+          <a href="./categories.html" class="hover:border-b-2">Categorias</a>
+        </li>
+        <li>
+          <a href="./about-us.html" class="hover:border-b-2">Sobre Nós</a>
+        </li>
+        <li>
+          <a href="./contact.html" class="hover:border-b-2">Contato</a>
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-x-10">
+        <a href="./settings.html"
+          ><img
+            class="w-[30px]"
+            src="../assets/icons/settings.svg"
+            alt="Configurações"
+        /></a>
+        <button
+          id="login-button"
+          class="h-fit text-2xl cursor-pointer px-10 py-1 rounded bg-white text-dark-blue font-semibold"
+        >
+          Entrar
+        </button>
+      </div>
     </header>
 
     <main class="w-full flex flex-col gap-10 my-10">
-        <section class="flex flex-col gap-y-10 w-full px-40">
-            <span class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl">Registre-se</span>
-            <form action="" class="flex flex-col items-center gap-y-14">
-                
-            </form>
-        </section>
+      <section class="flex flex-col gap-y-10 w-full px-40">
+        <span
+          class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl"
+          >Registre-se</span
+        >
+        <form action="" class="flex flex-col items-center gap-y-14"></form>
+      </section>
     </main>
-    <footer class="w-full h-footer flex justify-between items-center bg-dark-blue px-20 py-10">
+    <footer
+      class="w-full h-footer flex justify-between items-center bg-dark-blue px-20 py-10"
+    >
       <div class="h-full flex flex-col justify-between">
         <img
           src="../assets/logos/eptran-logo.png"
           class="w-auto h-2/5"
           alt="Logo do Eptran"
-        />        
+        />
         <img
           src="../assets/logos/joinville-logo.png"
           class="w-auto h-2/5"
@@ -90,20 +148,39 @@
         />
       </div>
       <div class="w-fit flex flex-col gap-3 items-center text-white text-lg">
-        <p>Rua Caçador, 112 – Anita Garibaldi – 89203-610, Joinville – SCM </p>   
-        <p><a class="underline decoration-2" href="">(47) 3431-1500</a> | <a class="underline decoration-2" href="mailto:detrans.uet@joinville.sc.gov.br">detrans.uet@joinville.sc.gov.br</a></p>
+        <p>Rua Caçador, 112 – Anita Garibaldi – 89203-610, Joinville – SCM</p>
+        <p>
+          <a class="underline decoration-2" href="">(47) 3431-1500</a> |
+          <a
+            class="underline decoration-2"
+            href="mailto:detrans.uet@joinville.sc.gov.br"
+            >detrans.uet@joinville.sc.gov.br</a
+          >
+        </p>
       </div>
       <div class="flex w-fit flex-col gap-y-4">
-        <div class="flex list-none justify-between">  
-          <li><a href="" target="_blank"><img class="w-[40px]"
-          src="../assets/icons/youtube-logo.svg"></a></li>
-          <li><a href="" target="_blank"><img class="w-[40px]"
-          src="../assets/icons/facebook-logo.svg"></a></li>
-          <li><a href="" target="_blank"><img class="w-[40px]"
-          src="../assets/icons/instagran-logo.svg"></a></li>
+        <div class="flex list-none justify-between">
+          <li>
+            <a href="" target="_blank"
+              ><img class="w-[40px]" src="../assets/icons/youtube-logo.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><img class="w-[40px]" src="../assets/icons/facebook-logo.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><img class="w-[40px]" src="../assets/icons/instagran-logo.svg"
+            /></a>
+          </li>
         </div>
-        <p class="text-white text-base text-center">Site desenvolvido por JVCode</p>
-      </div>  
+        <p class="text-white text-base text-center">
+          Site desenvolvido por JVCode
+        </p>
+      </div>
     </footer>
+    <script src=" ./../../scripts/popup.js"></script>
   </body>
 </html>

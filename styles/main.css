@@ -1,0 +1,50 @@
+.flex-col {
+  
+}
+
+.popup-section {
+  /* fixed w-screen h-screen hidden */
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-section .background-filter {
+  /* z-50 w-screen h-screen fixed bg-black opacity-50 */
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 50%;
+}
+
+.popup-container {
+  /* z-50 absolute flex justify-center items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup {
+  /* w-[600px] flex flex-col gap-10 px-14 absolute z-100 py-10 bg-white rounded-xl */
+  position: absolute;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 2.5rem 3.5rem;
+  background: #fff;
+}
+
+main {
+  padding: 2rem 0;
+
+}

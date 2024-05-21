@@ -24,19 +24,13 @@
         },
       }
     </script>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <section id="popup" class="fixed w-screen h-screen hidden">
-      <div
-        id="background-filter"
-        class="z-50 w-screen h-screen fixed bg-black opacity-50"
-      ></div>
-      <div
-        class="z-50 absolute flex justify-center items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-      >
-        <div
-          class="w-[600px] flex flex-col gap-10 px-14 absolute z-100 py-10 bg-white rounded-xl"
-        >
+    <section class="popup-section">
+      <div class="background-filter"></div>
+      <div class="popup-container">
+        <div class="popup">
           <span
             class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl"
             >Entre</span

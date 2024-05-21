@@ -1,28 +1,22 @@
 /* [<DOM> ELEMENTS] */
-const background = document.querySelector('#background-filter');
-const section = document.querySelector('#background-filter-section');
-const container = document.querySelector('#login-container');
-const button = document.querySelector('#login-buttom');
+const popup = document.querySelector("#popup")
+const background = document.querySelector("#background-filter")
+const button = document.querySelector("#login-button")
 /* [<DOM> ELEMENTS] */
 
 /* [STARTER CONFIG] */
-closePopup();
 /* [STARTER CONFIG] */
 
 /* [<EVENT LISTENERS>] */
-button.addEventListener('click', () => openPopup());
-background.addEventListener('click', () => closePopup());
+button.addEventListener("click", openPopup)
+background.addEventListener("click", closePopup)
 /* [<EVENT LISTENERS>] */
 
 /* INTERACTIVE <FUNCTIONS> */
 function openPopup() {
-  background.style.display = 'flex';
-  section.style.display = 'block';
-  container.style.display = 'flex'
+  popup.classList.remove("hidden")
 }
 function closePopup() {
-  background.style.display = 'none';
-  container.style.display = 'none'
-  section.style.display = 'none';
+  popup.classList.add("hidden")
 }
 /* INTERACTIVE <FUNCTIONS> */
