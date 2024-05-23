@@ -24,7 +24,7 @@
         },
       }
     </script>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
     <section id="popup" class="fixed w-screen h-screen hidden">
@@ -122,47 +122,35 @@
         </button>
       </div>
     </header>
-    <main class="flex flex-col gap-y-10 my-10">
-      <section class="flex w-full px-20">
-        <div class="flex-col bg-[#45C5DF] h-60vh w-full rounded">
-          <div class="flex justify-between w-full h-[55vh]">
-            <img
-              src="../assets/icons/left-arrow.svg"
-              class="left-slider-arrow w-[5vh] min-w-4 ml-4"
-              alt="Passar slide para a esquerda"
-            />
-            <img
-              src="../assets/icons/right-arrow.svg"
-              class="right-slider-arrow w-[5vh] mr-4 min-w-4"
-              alt="Passar slide para a direita"
-            />
-          </div>
-          <div class="w-fit flex m-auto gap-5">
-            <img
-              class="h-[3vh] min-h-2"
-              src="../assets/icons/white-balls.svg"
-              alt=""
-            />
-            <img
-              class="h-[3vh] min-h-2"
-              src="../assets/icons/white-balls.svg"
-              alt=""
-            />
-            <img
-              class="h-[3vh] min-h-2"
-              src="../assets/icons/white-balls.svg"
-              alt=""
-            />
-            <img
-              class="h-[3vh] min-h-2"
-              src="../assets/icons/white-balls.svg"
-              alt=""
-            />
+    <main>
+      <!-- start Banner -->
+      <section>
+        <div class="container">
+          <div class="banner">
+            <div class="arrows">
+              <img
+                src="../assets/icons/left-arrow.svg"
+                class="left-slider-arrow"
+                alt="Passar slide para a esquerda"
+              />
+              <img
+                src="../assets/icons/right-arrow.svg"
+                class="right-slider-arrow"
+                alt="Passar slide para a direita"
+              />
+            </div>
+            <div class="selectors">
+              <img src="../assets/icons/white-balls.svg" alt="Img 1" />
+              <img src="../assets/icons/white-balls.svg" alt="Img 2" />
+              <img src="../assets/icons/white-balls.svg" alt="Img 3" />
+              <img src="../assets/icons/white-balls.svg" alt="Img 4" />
+            </div>
           </div>
         </div>
       </section>
+      <!-- end Banner -->
 
-      <section class="flex w-full px-40 py-10 bg-light-gray">
+      <section class="flex w-full px-40 py-10">
         <p class="text-justify text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nulla
           explicabo, expedita nisi
@@ -184,160 +172,64 @@
           <b class="text-dark-blue text-2xl">architecto</b> eaque eos.
         </p>
       </section>
-      <section class="flex items-center gap-x-10 w-full px-40 py-5 bg-white">
-        <img
-          class="rounded-md w-1/3"
-          src="../assets/eptran-kids.png"
-          alt="Criancas"
-        />
-        <div class="flex flex-col gap-y-5 w-2/3">
-          <h2 class="text-3xl text-dark-blue font-semibold">
-            Lorem, ipsum dolor
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet
-            <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit.
-            Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod
-            molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi
-            laboriosam, facilis
-            <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni
-            expedita consectetur deleniti hic voluptate natus sed.
-            <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in
-            voluptatum enim odio et,
-            <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde
-            voluptas molestiae ipsam delectus nesciunt.
-          </p>
+      <section>
+        <div class="container">
+          <div class="display-1 col-1-2">
+            <img src="../assets/eptran-kids.png" alt="Criancas" />
+            <div class="text-container">
+              <h2>Lorem, ipsum dolor</h2>
+              <p>
+                Lorem ipsum dolor sit amet
+                <b>consectetur</b> adipisicing elit. Laborum corrupti magnam
+                aliquam voluptatum impedit qui deserunt quod molestiae nostrum
+                <b>quo</b> nisi laboriosam, facilis <b>consequuntur</b> iusto,
+                magni expedita consectetur deleniti hic voluptate natus sed.
+                <b>Nostrum</b> quia possimus in voluptatum enim odio et,
+                <b>dolor</b> quae rerum, unde voluptas molestiae ipsam delectus
+                nesciunt.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      <section
-        class="flex items-center gap-x-10 w-full px-40 py-5 bg-light-gray"
-      >
-        <img
-          class="rounded-md w-1/3"
-          src="../assets/eptran-kids.png"
-          alt="Criancas"
-        />
-        <div class="flex flex-col gap-y-5 w-2/3">
-          <h2 class="text-3xl text-dark-blue font-semibold">
-            Lorem, ipsum dolor
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet
-            <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit.
-            Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod
-            molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi
-            laboriosam, facilis
-            <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni
-            expedita consectetur deleniti hic voluptate natus sed.
-            <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in
-            voluptatum enim odio et,
-            <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde
-            voluptas molestiae ipsam delectus nesciunt.
-          </p>
+      <section>
+        <div class="container">
+          <div class="display-1 col-1-2">
+            <img src="../assets/eptran-kids.png" alt="Criancas" />
+            <div class="text-container">
+              <h2>Lorem, ipsum dolor</h2>
+              <p>
+                Lorem ipsum dolor sit amet
+                <b>consectetur</b> adipisicing elit. Laborum corrupti magnam
+                aliquam voluptatum impedit qui deserunt quod molestiae nostrum
+                <b>quo</b> nisi laboriosam, facilis <b>consequuntur</b> iusto,
+                magni expedita consectetur deleniti hic voluptate natus sed.
+                <b>Nostrum</b> quia possimus in voluptatum enim odio et,
+                <b>dolor</b> quae rerum, unde voluptas molestiae ipsam delectus
+                nesciunt.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="flex items-center gap-x-10 w-full px-40 py-5 bg-white">
-        <img
-          class="rounded-md w-1/3"
-          src="../assets/eptran-kids.png"
-          alt="Criancas"
-        />
-        <div class="flex flex-col gap-y-5 w-2/3">
-          <h2 class="text-3xl text-dark-blue font-semibold">
-            Lorem, ipsum dolor
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet
-            <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit.
-            Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod
-            molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi
-            laboriosam, facilis
-            <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni
-            expedita consectetur deleniti hic voluptate natus sed.
-            <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in
-            voluptatum enim odio et,
-            <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde
-            voluptas molestiae ipsam delectus nesciunt.
-          </p>
-        </div>
-      </section>
-      <section
-        class="flex items-center gap-x-10 w-full px-40 py-5 bg-light-gray"
-      >
-        <img
-          class="rounded-md w-1/3"
-          src="../assets/eptran-kids.png"
-          alt="Criancas"
-        />
-        <div class="flex flex-col gap-y-5 w-2/3">
-          <h2 class="text-3xl text-dark-blue font-semibold">
-            Lorem, ipsum dolor
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet
-            <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit.
-            Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod
-            molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi
-            laboriosam, facilis
-            <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni
-            expedita consectetur deleniti hic voluptate natus sed.
-            <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in
-            voluptatum enim odio et,
-            <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde
-            voluptas molestiae ipsam delectus nesciunt.
-          </p>
-        </div>
-      </section>
-      <section class="flex items-center gap-x-10 w-full px-40 py-5 bg-white">
-        <img
-          class="rounded-md w-1/3"
-          src="../assets/eptran-kids.png"
-          alt="Criancas"
-        />
-        <div class="flex flex-col gap-y-5 w-2/3">
-          <h2 class="text-3xl text-dark-blue font-semibold">
-            Lorem, ipsum dolor
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet
-            <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit.
-            Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod
-            molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi
-            laboriosam, facilis
-            <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni
-            expedita consectetur deleniti hic voluptate natus sed.
-            <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in
-            voluptatum enim odio et,
-            <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde
-            voluptas molestiae ipsam delectus nesciunt.
-          </p>
-        </div>
-      </section>
-      <section
-        class="flex items-center gap-x-10 w-full px-40 py-5 bg-light-gray"
-      >
-        <img
-          class="rounded-md w-1/3"
-          src="../assets/eptran-kids.png"
-          alt="Criancas"
-        />
-        <div class="flex flex-col gap-y-5 w-2/3">
-          <h2 class="text-3xl text-dark-blue font-semibold">
-            Lorem, ipsum dolor
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet
-            <b class="text-dark-blue text-xl">consectetur</b> adipisicing elit.
-            Laborum corrupti magnam aliquam voluptatum impedit qui deserunt quod
-            molestiae nostrum <b class="text-dark-blue text-xl">quo</b> nisi
-            laboriosam, facilis
-            <b class="text-dark-blue text-xl">consequuntur</b> iusto, magni
-            expedita consectetur deleniti hic voluptate natus sed.
-            <b class="text-dark-blue text-xl">Nostrum</b> quia possimus in
-            voluptatum enim odio et,
-            <b class="text-dark-blue text-xl">dolor</b> quae rerum, unde
-            voluptas molestiae ipsam delectus nesciunt.
-          </p>
+      <section>
+        <div class="container">
+          <div class="display-1 col-1-2">
+            <img src="../assets/eptran-kids.png" alt="Criancas" />
+            <div class="text-container">
+              <h2>Lorem, ipsum dolor</h2>
+              <p>
+                Lorem ipsum dolor sit amet
+                <b>consectetur</b> adipisicing elit. Laborum corrupti magnam
+                aliquam voluptatum impedit qui deserunt quod molestiae nostrum
+                <b>quo</b> nisi laboriosam, facilis <b>consequuntur</b> iusto,
+                magni expedita consectetur deleniti hic voluptate natus sed.
+                <b>Nostrum</b> quia possimus in voluptatum enim odio et,
+                <b>dolor</b> quae rerum, unde voluptas molestiae ipsam delectus
+                nesciunt.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

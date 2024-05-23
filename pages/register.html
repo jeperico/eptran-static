@@ -25,6 +25,7 @@
       }
     </script>
     <link rel="stylesheet" href="../styles/main.css" />
+    
   </head>
   <body>
     <section id="popup" class="fixed w-screen h-screen hidden">
@@ -123,70 +124,33 @@
       </div>
     </header>
 
-      <main class="flex flex-col gap-y-10 my-10">
-          <section
-            class="flex flex-col items-center gap-x-10 w-full px-40 py-5 bg-light-gray"
-          >
-            <span
-              class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl"
-              >Registre-se</span
-            >
-            <form action="" class="flex flex-col gap-7 w-1/2">
-              <label for="name" class="flex flex-col text-black">
-                <span class="text-dark-blue font-medium">Nome:</span>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Nome:"
-                  class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+      <main>
+        <!-- start Banner -->
+        <section>
+          <div class="container">
+            <div class="banner">
+              <div class="arrows">
+                <img
+                  src="../assets/icons/left-arrow.svg"
+                  class="left-slider-arrow"
+                  alt="Passar slide para a esquerda"
                 />
-              </label>
-              <label for="email" class="flex flex-col text-black">
-                <span class="text-dark-blue font-medium">Email:</span>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email:"
-                  class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
-                />
-              </label>
-              <label for="CPF" class="flex flex-col text-black">
-                <span class="text-dark-blue font-medium">CPF:</span>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="CPF:"
-                  class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
-                />
-              </label>
-              <label for="password" class="flex flex-col text-black">
-                <span class="text-dark-blue font-medium">Senha:</span>
-                <input
-                  type="password"
-                  id="name"
-                  placeholder="Informe sua senha:"
-                  class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
-                />
-              </label>
-              <label for="password" class="flex flex-col text-black">
-                <span class="text-dark-blue font-medium">Confirmar senha:</span>
-                <input
-                  type="password"
-                  id="name"
-                  placeholder="Conrfirme sua senha:"
-                  class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
-                />
-              </label>
-              <div class="flex justify-between">
-                <input
-                  type="submit"
-                  value="Cadastrar"
-                  class="w-fit self-center py-1 px-10 rounded-md bg-dark-blue text-white text-xl"
+                <img
+                  src="../assets/icons/right-arrow.svg"
+                  class="right-slider-arrow"
+                  alt="Passar slide para a direita"
                 />
               </div>
-            </form>
-          </section>
-        </main>
+              <div class="selectors">
+                <img src="../assets/icons/white-balls.svg" alt="Img 1" />
+                <img src="../assets/icons/white-balls.svg" alt="Img 2" />
+                <img src="../assets/icons/white-balls.svg" alt="Img 3" />
+                <img src="../assets/icons/white-balls.svg" alt="Img 4" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end Banner -->
         <form action="" class="flex flex-col items-center gap-y-14"></form>
       </section>
     </main>
