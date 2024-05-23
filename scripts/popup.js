@@ -1,7 +1,7 @@
 /* [<DOM> ELEMENTS] */
-const popup = document.querySelector("#popup")
-const background = document.querySelector("#background-filter")
-const button = document.querySelector("#login-button")
+const popup = document.querySelector(".popup-section")
+const background = document.querySelector(".background-filter")
+const button = document.querySelector(".login-button")
 /* [<DOM> ELEMENTS] */
 
 /* [STARTER CONFIG] */

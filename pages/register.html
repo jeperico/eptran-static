@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>register</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -123,12 +123,70 @@
       </div>
     </header>
 
-    <main class="w-full flex flex-col gap-10 my-10">
-      <section class="flex flex-col gap-y-10 w-full px-40">
-        <span
-          class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl"
-          >Registre-se</span
-        >
+      <main class="flex flex-col gap-y-10 my-10">
+          <section
+            class="flex flex-col items-center gap-x-10 w-full px-40 py-5 bg-light-gray"
+          >
+            <span
+              class="w-full py-2 bg-dark-blue rounded-md text-center text-white font-semibold text-2xl"
+              >Registre-se</span
+            >
+            <form action="" class="flex flex-col gap-7 w-1/2">
+              <label for="name" class="flex flex-col text-black">
+                <span class="text-dark-blue font-medium">Nome:</span>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nome:"
+                  class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+                />
+              </label>
+              <label for="email" class="flex flex-col text-black">
+                <span class="text-dark-blue font-medium">Email:</span>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email:"
+                  class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+                />
+              </label>
+              <label for="CPF" class="flex flex-col text-black">
+                <span class="text-dark-blue font-medium">CPF:</span>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="CPF:"
+                  class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+                />
+              </label>
+              <label for="password" class="flex flex-col text-black">
+                <span class="text-dark-blue font-medium">Senha:</span>
+                <input
+                  type="password"
+                  id="name"
+                  placeholder="Informe sua senha:"
+                  class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+                />
+              </label>
+              <label for="password" class="flex flex-col text-black">
+                <span class="text-dark-blue font-medium">Confirmar senha:</span>
+                <input
+                  type="password"
+                  id="name"
+                  placeholder="Conrfirme sua senha:"
+                  class="p-2 border-2 border-dark-blue rounded outline-slate-300 placeholder-slate-300"
+                />
+              </label>
+              <div class="flex justify-between">
+                <input
+                  type="submit"
+                  value="Cadastrar"
+                  class="w-fit self-center py-1 px-10 rounded-md bg-dark-blue text-white text-xl"
+                />
+              </div>
+            </form>
+          </section>
+        </main>
         <form action="" class="flex flex-col items-center gap-y-14"></form>
       </section>
     </main>
